@@ -17,10 +17,10 @@ require("dotenv").config();
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
-// const person =require("./models/person")
+// const person  =require("./models/person")
 // const menuItem = require("./models/Menuitem");
-// const emp = require("./models/employee");
-// const dept= require("./models/department");
+const emp = require("./models/employee");
+const dept= require("./models/department");
 const stu =require("./models/student"); 
 // app.post("/person",async(req,res)=>{
 //     try{
@@ -173,11 +173,11 @@ const stu =require("./models/student");
 //  res.send(customized_idli)
 // })
 // import the router files
-// const empRoutes= require("./routes/empRoutes");
+const empRoutes= require("./routes/empRoutes");
 // // // use the routers
-// app.use("/emp",empRoutes);
-// const deptRoutes = require("./routes/deptRoutes");
-// app.use("/dept", deptRoutes);
+app.use("/emp",empRoutes);
+const deptRoutes = require("./routes/deptRoutes");
+app.use("/dept", deptRoutes);
 const stuRoutes = require("./routes/stuRoutes");
 app.use("/stu", stuRoutes);
 

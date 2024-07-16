@@ -14,16 +14,16 @@ router.post("/", async(req,res)=>{
           res.status(500).json({error : "Internal server error"});
        }
      });
-router.get("/",async(req,res)=>{
-        try{
-            const data = await dept.find();
-            console.log(" data featched");
-            res.status(200).json(data); 
-        }
-        catch(err){
-           console.log(err);
-           res.status(500).json({error : "Internal server error"});
-        }
-     });
+// router.get("/",async(req,res)=>{
+//         try{
+//             const data = await dept.find();
+//             console.log(" data featched");
+//             res.status(200).json(data); 
+//         }
+//         catch(err){
+//            console.log(err);
+//            res.status(500).json({error : "Internal server error"});
+//         }
+//      });
 
      module.exports = router;
