@@ -17,10 +17,9 @@ app.use("/emp",empRoutes);
 // const deptRoutes = require("./routes/deptRoutes");
 // app.use("/dept", deptRoutes);
 // const stuRoutes = require("./routes/stuRoutes");
-// app.use("/stu", stuRoutes);
-
-app.listen(PORT,()=>{
-    console.log("listing on port 3000")
+// app.use("/stu", stuRoutes)
+ app.listen(PORT,()=>{
+   console.log("listing on port 3000")
 // app.listen(3000,()=>{
 //     console.log("listing on port 3000")
 })
