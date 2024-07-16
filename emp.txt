@@ -1,0 +1,21 @@
+{
+    "empno": 103,
+    "ename": "Revanth",
+    "age": 43,
+    "salary": 5000,
+    "deptno": 30,
+    "job": "hr",
+    "joindate": "1992-10-11"
+}
+  {
+    "dname": "raja",
+    "deptno": 30,
+    "loc": "Chennai"
+}
+{
+    "name": "Marsh",
+    "age": 6,
+    "class" :"four",
+    "marks":89,
+    "gender": true
+}
