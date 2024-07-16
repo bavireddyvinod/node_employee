@@ -17,5 +17,5 @@
     "age": 6,
     "class" :"four",
     "marks":89,
-    "gender": true
+    "gender": "male"
 }
