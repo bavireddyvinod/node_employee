@@ -5,6 +5,12 @@ require("dotenv").config();
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
+//Middlewarw function
+const logrequest = (req,res,next)=>{
+    console.log(`[${new Date().toLocaleString()}] Request Made to : ${req.originalUrl}`);
+    next();
+};
+app.use(logrequest);
 // const person  =require("./models/person")
 // const menuItem = require("./models/Menuitem");
 const emp = require("./models/employee");
